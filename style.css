@@ -1,0 +1,72 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    
+    display: flex;
+    align-items: center;
+    
+}
+.logo{
+    align-self: auto;
+    
+}
+
+.container{
+    display: flex;
+}
+
+.container_message{
+    width:50%; 
+    display:inline-block; 
+    border:solid;
+}
+.container_encrypted{
+    display:inline-block; 
+    border:solid;
+    
+
+}
+.message{
+    width: 6cm;
+    height: 13cm;
+    border: solid black 0.5mm;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: left;
+}
+
+.encrypted_message {
+    width: 400px;
+    height: 944px;
+    top: 40px;
+    left: 1000px;
+    border-radius: 32px;
+    
+}
+.encrypt{
+    border-radius: 16px;
+    background: #1875E8;
+    padding: 16px 24px;
+    width: 100%;
+    font-size: 24px;
+    font-weight: 700;
+    border: none;
+    margin-top: 16px;
+}
+
+.decrypt{
+    border-radius: 16px;
+    background: grey;
+    padding: 16px 24px;
+    width: 100%;
+    font-size: 24px;
+    font-weight: 700;
+    border: none;
+    margin-top: 16px;
+}
