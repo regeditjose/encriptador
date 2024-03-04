@@ -1,41 +1,46 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&family=Inter:wght@400;700&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <title>Encriptador</title>
-</head>
-<body>
-    
-    <div class="container">
-        <div class="logo">
-        <img src="./imgs/Logo.png" alt ="icon" class="icon-alura"/>
-        </div>
-        <div class="container_message">
-        <input class="message" id="message"></input>
-        </div>
-        <div class="container_encrypted">
-        <input src="./imgs/Muñeco.png" type="image" class="encrypted_message" id="encrypted_message"></input>
-        </input>
-        </div>
-        <div class="container__contenido">
-        </div>
-        <button class="encrypt" id="encrypt">
-        <div>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+    />
+  </head>
+  <body>
+    <div class="encriptador-1-desktop">
+      <div class="encriptador-1-desktop-child"><textarea  class="message" id="message" placeholder= "" oninput="hideMessage()">
+        
+    </textarea></div>
+    <button class="copiar" id="copiar" onclick="copiar()">Copiar</button>
+      <input class="ingrese-el-texto" id="ingreseElTexto" placeholder="Ingrese el texto aqui">
+      </input>
+      <div class="button-parent">
+        <button class="button" onclick="btnEncriptar ()">
+          <div class="button1">Encriptar</div>
         </button>
-        </div>
-        <div>
-        <button class="decrypt" id="decrypt">
+        <button class="button2" onclick="btnDesencriptar ()">
+          <div class="button1">Desencriptar</div>
         </button>
+      </div>
+      <div class="biexclamation-circle-fill-parent">
+
+        <div class="solo-letras-minsculas">
+          Solo letras minúsculas y sin acentos
+        </div>
+      </div>
+      
+      <div class="logo">
+        <img class="logo-icon" alt="" src="./imgs/Logo.png" />
+      </div>
     </div>
     
-    <footer>
 
-    </footer>
-</body>
+    <script src="./app.js">
+      
+      </script>
+  </body>
 </html>
